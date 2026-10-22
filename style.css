@@ -1,0 +1,237 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+h1 {
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+
+pre {
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+    white-space: pre-wrap; 
+
+    font-family: inherit;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 15px 0;
+}
+
+
+a {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #3498db;
+    padding: 8px 16px;
+    margin: 5px 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+
+ul, ol {
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#photomoatz {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#photomoatz.zoomed {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+ 
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#clock {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#darkModeBtn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3 {
+    color: #64b5f6;
+}
+
+body.dark-theme pre, body.dark-theme table, body.dark-theme ul, body.dark-theme ol, body.dark-theme .contact-box {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-theme tr:nth-child(even) {
+    background-color: #333333;
+}
+
+body.dark-theme th {
+    background-color: #0d47a1;
+}
+
+
+#tableSearch {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.email-container {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.toast {
+    visibility: hidden;
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 10px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.contact-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-box input, .contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-box button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+#formFeedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
